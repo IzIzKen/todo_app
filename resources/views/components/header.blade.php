@@ -16,8 +16,7 @@
             @auth
                 <li class="nav-item">
                     <a class="dropdown-item" href="{{ route('logout')  }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
-                    <form id="logout-form" action="{{ route('register')  }}" method="POST" style="display: none;"></form>
-                        @csrf
+                    <form id="logout-form" action="{{ route('register')  }}" method="POST" style="display: none;">@csrf</form>
                 </li>
             @else
                 <li class="nav-item">
