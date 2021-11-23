@@ -11,11 +11,11 @@ class Todo extends Model
 
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\Models\User');
     }
 
     public function goal()
     {
-        return $this->belongsTo('App\Goal');
+        return $this->belongsTo('App\Models\Goal');
     }
 }

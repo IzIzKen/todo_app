@@ -9,11 +9,11 @@ class Goal extends Model
 {
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\Models\User');
     }
 
     public function todos()
     {
-        return $this->hasMany('App\Todo');
+        return $this->hasMany('App\Models\Todo');
     }
 }

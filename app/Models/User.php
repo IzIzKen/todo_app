@@ -44,11 +44,11 @@ class User extends Authenticatable
 
     public function goals()
     {
-        return $this->hasMany('App\Goal');
+        return $this->hasMany('App\Models\Goal');
     }
 
     public function todos()
     {
-        return $this->hasMany('App\Todo');
+        return $this->hasMany('App\Models\Todo');
     }
 }
